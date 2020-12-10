@@ -23,7 +23,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
 }
 
 .content {
@@ -42,7 +42,7 @@ nav {
   padding: 1rem;
 }
 nav .logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 nav ul {
   display: flex;
@@ -68,6 +68,24 @@ nav li a {
   text-decoration: none;
 }
 
-.footer {
-  height: 100px;
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+}
+
+footer ul {
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer strong {
+  color: #00c2ff;
+}
+
+footer p {
+  margin: 0;
 }
