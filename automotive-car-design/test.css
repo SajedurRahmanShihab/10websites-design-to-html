@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -41,9 +42,11 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
 nav .logo {
   font-size: 2.5rem;
 }
+
 nav ul {
   display: flex;
   list-style-type: none;
@@ -55,6 +58,7 @@ nav li a {
   padding: 1rem;
   text-decoration: none;
 }
+
 .selected {
   font-weight: bold;
 }
@@ -74,6 +78,7 @@ footer {
 
 footer ul {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
@@ -85,4 +90,33 @@ footer strong {
 
 footer p {
   margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    font-size: 1.4rem;
+    margin: 2rem auto 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  nav .highlight {
+    display: none;
+  }
+
+  footer ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer li {
+    margin: 1rem;
+    text-align: center;
+  }
 }
